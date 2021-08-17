@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.py.aviadoresapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+    // ever esta trabajando aca
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
