@@ -2,6 +2,9 @@ package com.py.aviadoresapp
 
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -15,7 +18,7 @@ import androidx.appcompat.widget.Toolbar
 import com.py.aviadoresapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    // ever esta trabajando aca
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
@@ -32,6 +35,9 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
+
+
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
@@ -41,6 +47,8 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
